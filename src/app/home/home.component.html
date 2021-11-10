@@ -1,0 +1,6 @@
+<form #newUser="ngForm" (ngSubmit)="AddNewUser(newUser.value)">
+  <input type="text" name="name" ngModel placeholder="Enter Your Name" /><br><br>
+  <input type="email" name="email" ngModel placeholder="Your Email Address" /><br><br>
+  <input type="number" name="age" ngModel placeholder="Age Here" /><br><br>
+  <input type="submit" value="Add User">
+</form>

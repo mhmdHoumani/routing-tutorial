@@ -1,0 +1,42 @@
+<div class="nav-bar">
+  <h1>Routing Tutorial</h1>
+  <ul>
+    <li><a routerLink="">Home</a></li>
+    <li><a routerLink="About">About</a></li>
+    <li><a routerLink="Users">User</a></li>
+    <li><a routerLink="contact">Contact</a></li>
+  </ul>
+</div>
+
+<div>
+  <ul>
+    <li><a routerLink="admin/login">Admin Login</a></li>
+    <li><a routerLink="admin/list">Admin List</a></li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li><a routerLink="employee/login">Employee Login</a></li>
+    <li><a routerLink="employee/list">Employee List</a></li>
+  </ul>
+</div>
+
+<!-- <div>
+  <ul>
+    <li><a routerLink="User/10">Peter</a></li>
+    <li><a routerLink="User/20">John</a></li>
+    <li><a routerLink="User/30">Bruce</a></li>
+  </ul>
+</div> -->
+<router-outlet></router-outlet><br>
+<div>
+  <ul>
+    <li *ngFor="let data of users">
+      Id: {{data.id}}<br>Name: {{data.name}}<br>Email: {{data.email}}<br>Phone Number: {{data.age}}.
+      <br><br>
+    </li>
+  </ul>
+</div>
+<footer>
+  <app-footer></app-footer>
+</footer>
